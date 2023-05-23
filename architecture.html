@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    .scale img {
+        filter: grayscale(70%);
+        -webkit-filter: grayscale(70%);
+    }
+    .block2{
+        margin-top: 25px;
+    }
+
+    div.desc {
+        padding: 5px;
+        font-size: 22px;
+    }
+
+    .desc p {
+        color: gray;
+        line-height: 5px;
+    }
+
+    .responsive {
+        padding: 0 6px;
+        width: 23.5%;
+        padding-bottom: 20px;
+        position: relative;
+     
+    }
+
+    .responsive img {
+        width: 100%;
+        height: auto;
+    }
+
+    .element {
+        position: absolute;
+        left: 5px;
+        top: 0;
+        background-color: black;
+        color: white;
+        padding: 5px;
+    }
+
+    .ab {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .picture_with_info {
+
+        position: relative;
+       text-align: center;
+       margin-bottom: 40px;
+    }
+
+    .picture_with_info img {
+        width: 90%;
+    }
+
+    .top_left {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        font-size: 30px;
+        font-family: monospace;
+    }
+    input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.but{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer a:hover{
+    color: white;
+}
+.navbar {
+  overflow: hidden;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: rgba(128, 128, 128, 0.877);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: monospace;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.navbar a.split {
+  float: left;
+  color: gray;
+}
+.topnav {
+  overflow: hidden;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  display: none;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: rgba(128, 128, 128, 0.877);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: monospace;
+}
+
+.topnav a:hover {
+  background: #ddd;
+  color: black;
+}
+.topnav a.split {
+  float: left;
+  color: gray;
+}
+@media only screen and (max-width:768px){
+.responsive{
+    width: 48%;
+}
+}
+@media only screen and (max-width:600px){
+.responsive{
+    width: 100%;
+}
+.navbar{
+    display: none;
+}
+.topnav{
+    display: block;
+}
+#sp{
+    display: none;
+}
+}
+</style>
+
+<body>
+    
+    <div class="navbar">
+        <a href="#">Contacts</a>
+        <a href="#">About</a>
+       <a href="#">Projects</a>
+        <a href="#"class="split"><b style="color: black;">B R</b> Architects</a>
+      </div> 
+
+
+
+      <!--Only for class split-->
+      <div class="topnav">
+        <a href="#" class="split"><b style="color: black;">B R</b> Architects</a>
+      </div>
+    <div class="picture_with_info">
+        <a href="">
+            <img src="https://www.w3schools.com/w3images/architect.jpg">
+        </a>
+        <div class="top_left">
+          <h1 style="font-size: 40px;">
+            <span style="background-color: black;padding:5px;opacity: 0.7; color: white;"><b>BR</b></span>
+            <span  id="sp" style="color: white;">Architects</span>
+          </h1>
+        </div>
+    </div>
+    <div class="heading">
+        <h2>Projects</h2>
+    </div>
+    <hr>
+    <div class="ab">
+        <div class="responsive">
+            <a target="_blank" href="#">
+                <img src="https://www.w3schools.com/w3images/house5.jpg">
+                <div class="element">Summer House</div>
+            </a>
+        </div>
+        <div class="responsive">
+            <a target="_blank" href="#">
+                <img src="https://www.w3schools.com/w3images/house2.jpg">
+                <div class="element">Brick House</div>
+            </a>
+        </div>
+        <div class="responsive">
+            <a target="_blank" href="#">
+                <img src="https://www.w3schools.com/w3images/house3.jpg">
+                <div class="element">Renovated</div>
+            </a>
+        </div>
+
+        <div class="responsive">
+            <a target="_blank" href="#">
+                <img src="https://www.w3schools.com/w3images/house4.jpg">
+                <div class="element">Barn House</div>
+            </a>
+        </div>
+        <div class="responsive">
+            <a target="_blank" href="#">
+                <img src="https://www.w3schools.com/w3images/house2.jpg">
+                <div class="element">Brick House</div>
+            </a>
+        </div>
+        <div class="responsive">
+            <a target="_blank" href="#">
+                <img src="https://www.w3schools.com/w3images/house3.jpg">
+                <div class="element">Renovated</div>
+            </a>
+        </div>
+        <div class="responsive responsive1">
+            <a target="_blank" href="#">
+                <img src="https://www.w3schools.com/w3images/house4.jpg">
+                <div class="element">Barn House</div>
+            </a>
+        </div>
+        <div class="responsive">
+            <a target="_blank" href="#">
+                <img src="https://www.w3schools.com/w3images/house5.jpg">
+                <div class="element">Summer House</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="heading">
+        <h2>About</h2>
+    </div>
+    <hr>
+    <div class="para">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+    <div class="ab block2">
+        <div class="responsive scale">
+            <a target="_blank" href="#">
+                <img src="https://www.w3schools.com/w3images/team2.jpg">
+            </a>
+            <div class="desc">John Doe<p>CEO & Founder</p>
+                <h5>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+            </div>
+           <button style="width: 100%; padding: 5px;">Contact</button>
+        </div>
+        <div class="responsive scale">
+            <a target="_blank" href="#">
+                <img src="https://www.w3schools.com/w3images/team1.jpg">
+            </a>
+            <div class="desc">Jane Doe<p>Architect</p>
+                <h5>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+            </div>
+            <button style="width: 100%; padding: 5px;">Contact</button>
+        </div>
+        <div class="responsive scale">
+            <a target="_blank" href="#">
+                <img src="https://www.w3schools.com/w3images/team3.jpg">
+            </a>
+            <div class="desc">Mike Ross<p>Architect</p>
+                <h5>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+            </div>
+            <button style="width: 100%; padding: 5px;">Contact</button>
+        </div>
+
+        <div class="responsive scale">
+            <a target="_blank" href="#">
+                <img src="https://www.w3schools.com/w3images/team4.jpg">
+            </a>
+            <div class="desc">Dan Star<p>Architect</p>
+                <h5>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5>
+            </div>
+            <button style="width: 100%; padding: 5px;">Contact</button>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="heading">
+        <h2>
+            Contact
+        </h2>
+    </div>
+    <hr>
+    <p>Lets get in touch with your next project</p>
+    <form>
+        <input type="text" name="Fname" placeholder="Name" required><br><br>
+        <input type="text" name="e-mail" placeholder="Email" required><br><br>
+        <input type="text" name="Subject" placeholder="Subject"><br><br>
+        <input type="text" name="comment" placeholder="Any suggestions"><br><br>
+        <button class="but">SEND MESSAGE</button>
+    </form>
+    <div class="picture_with_info" style="margin-top: 30px;">
+        <a href="">
+            <img src="https://www.w3schools.com/w3images/map.jpg">
+        </a>
+    </div>
+    <footer>
+        <h3>Powered by <span><a href="#">w3.css</a></span></h3>
+    </footer>
+</body>
+
+</html>
